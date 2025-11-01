@@ -1,0 +1,73 @@
+/* Basic styling for phone frame and layout */
+.phone-frame {
+    width: 360px; /* Typical phone width */
+    height: 640px; /* Typical phone height */
+    border: 10px solid #333;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px auto;
+    background-color: #000; /* Windows Phone background */
+    position: relative;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Status bar, header, content, and navigation bar styling */
+.status-bar {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8em;
+}
+
+.header {
+    background-color: #0078D7; /* Accent color */
+    color: #fff;
+    padding: 15px 10px;
+    text-align: center;
+}
+
+.content {
+    background-color: #fff;
+    color: #333;
+    padding: 15px;
+    height: calc(100% - 120px); /* Adjust based on header/nav height */
+    overflow-y: auto;
+    display: none; /* Hide by default */
+}
+
+.content.active {
+    display: block; /* Show active content */
+}
+
+.navigation-bar {
+    background-color: #222;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Styling for app elements like lists, buttons, etc. */
+.app-list li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.app-list li:hover {
+    background-color: #f0f0f0;
+}
+
+.back-button, .nav-button {
+    background-color: #0078D7;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
