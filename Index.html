@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows Phone Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="phone-frame">
+        <div class="status-bar">
+            <span>9:41 AM</span>
+            <span class="signal-icon">📶</span>
+            <span class="battery-icon">  /span>  lt;/span>
+        </div>
+        <div class="header">
+            <h1>My App</h1>
+        </div>
+        <div class="content active" id="home-screen">
+            <ul class="app-list">
+                <li data-target="page1">Page 1</li>
+                <li data-target="page2">Page 2</li>
+                <li data-target="page3">Page 3</li>
+            </ul>
+        </div>
+        <div class="content" id="page1">
+            <h2>Welcome to Page 1</h2>
+            <p>This is the content for page 1.</p>
+            <button class="back-button">Back</button>
+        </div>
+        <!-- Add more content divs for other "pages" -->
+        <div class="navigation-bar">
+            <button class="nav-button active" data-target="home-screen">Home</button>
+            <button class="nav-button" data-target="page2">Settings</button>
+            <!-- Add more navigation buttons -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
